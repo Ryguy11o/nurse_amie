@@ -1,0 +1,98 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.c6521c21-42b4-48b6-a0b0-67346d7a00b2",
+		"application": {
+			"applicationId": "amzn1.ask.skill.9eb82f08-bd35-427c-b41e-ed754bb96abc"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AGDOJQEIGOCPISR2TV47TV524HJ37XIBZQ2M6E5ZVZKG4QUT3AKOXZFPQDSG6LUIX5UXIRLCT5GIKGGFIUXUGEBYGKUMFPRR5CIMYXZRYY7XV4JA3TXD6JHFDZKZDQ76YPFHXM37REEFUHRVAP2KBEQC3UXJMS4QMOCVZRAFTFZEACX3NUAJMY67BDPHSHQYQQ5Z72DEQD5JC6Q"
+		}
+	},
+	"context": {
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.9eb82f08-bd35-427c-b41e-ed754bb96abc"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AGDOJQEIGOCPISR2TV47TV524HJ37XIBZQ2M6E5ZVZKG4QUT3AKOXZFPQDSG6LUIX5UXIRLCT5GIKGGFIUXUGEBYGKUMFPRR5CIMYXZRYY7XV4JA3TXD6JHFDZKZDQ76YPFHXM37REEFUHRVAP2KBEQC3UXJMS4QMOCVZRAFTFZEACX3NUAJMY67BDPHSHQYQQ5Z72DEQD5JC6Q"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AHQAZIGMAVCHYPBW74WSORZRBOZRGHUFVV7DHNUPVLQWF6WXAAYYAUSZT5IRVFX3EAVLOSTFR6WXJKATOX6AMO5AVVFGXJUPEU2WAJ7QSCCUU7LL6447HAVVSICJ2HNA7PQEOUQMOPRR2WBAEKKHGKAEHGWQ",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjllYjgyZjA4LWJkMzUtNDI3Yy1iNDFlLWVkNzU0YmI5NmFiYyIsImV4cCI6MTU5MTAzMzExNiwiaWF0IjoxNTkxMDMyODE2LCJuYmYiOjE1OTEwMzI4MTYsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFBVFNqODAvZzVRR2hneTd3QWlmTnk3SWdFQUFBQUFBQUNRRE5TWS8yVmdHaTYzdUxpK0k2Ylgxdkl1QjNVL3JLTjJHT3dPNVJvVEUyaUNOV0w5aXcyWCtXczl0RjVJTW0rU29aTEtEM05VaEQxUitXdFlYbDBseEtOUTlTNk1raCtFRnJ0aVVXekQ2dy8ydFdXT3cxbUw1bmlDTDFNbDJrZEFETXdjaGo4TFlUdG4rQXd0ZndLMHNGY0R5eEZaWEVwcE9DOGxkSUNyTlh2NEEwTnp1eWhmc0RyeXZOdHRXaWEreS9yRTFzNzIrblYrZldzZmZ6blRVZ25HUmtuWXRwTWluZTRKeTVFZHdDNENuRDRWMXczWVhUR3pkNUxTNGVhNm1qY0JDTHFBOGs0d0R4NzJQa3hxcEg1SzJqMmJnVlN6T1hPUjluNzA5cThodjV4YlBabmFsVTdodWNUYzVXNnJOeG5TUi9OdjQ2Mk1iMUR1NnBkT05FS0QxNkJlSHVVL2ZMcSt5R1ZaN3l3Z3MwWjRBVld6N1pEQlE5STZjT2dNOHc9PSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFIUUFaSUdNQVZDSFlQQlc3NFdTT1JaUkJPWlJHSFVGVlY3REhOVVBWTFFXRjZXWEFBWVlBVVNaVDVJUlZGWDNFQVZMT1NURlI2V1hKS0FUT1g2QU1PNUFWVkZHWEpVUEVVMldBSjdRU0NDVVU3TEw2NDQ3SEFWVlNJQ0oySE5BN1BRRU9VUU1PUFJSMldCQUVLS0hHS0FFSEdXUSIsInVzZXJJZCI6ImFtem4xLmFzay5hY2NvdW50LkFHRE9KUUVJR09DUElTUjJUVjQ3VFY1MjRISjM3WElCWlEyTTZFNVpWWktHNFFVVDNBS09YWkZQUURTRzZMVUlYNVVYSVJMQ1Q1R0lLR0dGSVVYVUdFQllHS1VNRlBSUjVDSU1ZWFpSWVk3WFY0SkEzVFhENkpIRkRaS1pEUTc2WVBGSFhNMzdSRUVGVUhSVkFQMktCRVFDM1VYSk1TNFFNT0NWWlJBRlRGWkVBQ1gzTlVBSk1ZNjdCRFBIU0hRWVFRNVo3MkRFUUQ1SkM2USJ9fQ.KijN5LCigD1olgVjjHY0_YQk7sfy0-Vcy0NVh5lMcObemnQ_a_2VPg9_Mn-u2kYhJ0j1Pskr4KL4MEcMlUeMERaycG7zO9hvJnG8xPzDERvh9yzqE2ao-uaF0ViYrjkQhXSSLEVyHDZMfYtjGnZrT8p5VFocOVuvIxFHQ0k4hB4JWhYUZj3VHR49R7SEnma2DK25c6QfvgcRrGotlGeoLAhqwd3EWccAwpg3tkJqRwN1jb7mZUA5h7Rv-pmEGwfGy1YIzYdSUQiMJq8yhGIri4djEGQEjaRSpbswBE7WWpXwjw39Z8wd639_1q0HmHclF1WhnPyEpbq02TKQ_NTcmw"
+		},
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 246,
+					"arcMinuteHeight": 144,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1024,
+			"pixelHeight": 600,
+			"dpi": 160,
+			"currentPixelWidth": 1024,
+			"currentPixelHeight": 600,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		},
+		"Viewports": [
+			{
+				"type": "APL",
+				"id": "main",
+				"shape": "RECTANGLE",
+				"dpi": 160,
+				"presentationType": "STANDARD",
+				"canRotate": false,
+				"configuration": {
+					"current": {
+						"video": {
+							"codecs": [
+								"H_264_42",
+								"H_264_41"
+							]
+						},
+						"size": {
+							"type": "DISCRETE",
+							"pixelWidth": 1024,
+							"pixelHeight": 600
+						}
+					}
+				}
+			}
+		]
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.ea4924c4-c560-4bc3-9bc1-26ce5c95ca92",
+		"timestamp": "2020-06-01T17:33:36Z",
+		"locale": "en-US",
+		"intent": {
+			"name": "NameIntent",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"name": {
+					"name": "name",
+					"value": "Ryan",
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				}
+			}
+		},
+		"dialogState": "COMPLETED"
+	}
+}

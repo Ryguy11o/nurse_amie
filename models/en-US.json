@@ -1,385 +1,201 @@
 {
   "interactionModel": {
-    "languageModel": {
-      "invocationName": "decision tree",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-         "name": "AMAZON.FallbackIntent",
-         "samples": []
-       },
-        {
-          "name": "CouchPotatoIntent",
-          "samples": [
-            "couch potato",
-            "lazy"
-          ]
-        },
-        {
-          "name": "RecommendationIntent",
-          "slots": [
-            {
-              "name": "salaryImportance",
-              "type": "salaryImportanceType",
-              "samples": [
-                "{I_Want} to be {salaryImportance}",
-                "{salaryImportance}"
+      "languageModel": {
+          "invocationName": "nurse amie",
+          "modelConfiguration": {
+              "fallbackIntentSensitivity": {
+                  "level": "LOW"
+              }
+          },
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "CouchPotatoIntent",
+                  "slots": [],
+                  "samples": [
+                      "couch potato",
+                      "lazy"
+                  ]
+              },
+              {
+                  "name": "RecommendationIntent",
+                  "slots": [
+                      {
+                          "name": "sleep",
+                          "type": "AMAZON.NUMBER",
+                          "samples": [
+                              "{sleep}"
+                          ]
+                      },
+                      {
+                          "name": "fatigue",
+                          "type": "AMAZON.NUMBER",
+                          "samples": [
+                              "{fatigue}"
+                          ]
+                      },
+                      {
+                          "name": "pain",
+                          "type": "AMAZON.NUMBER",
+                          "samples": [
+                              "{pain}"
+                          ]
+                      },
+                      {
+                          "name": "distress",
+                          "type": "AMAZON.NUMBER",
+                          "samples": [
+                              "{distress}"
+                          ]
+                      }
+                  ],
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "NameIntent",
+                  "slots": [
+                      {
+                          "name": "name",
+                          "type": "AMAZON.FirstName",
+                          "samples": [
+                              "{name}"
+                          ]
+                      }
+                  ],
+                  "samples": []
+              }
+          ],
+          "types": []
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "RecommendationIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "sleep",
+                          "type": "AMAZON.NUMBER",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1175660665862.1389197797871"
+                          }
+                      },
+                      {
+                          "name": "fatigue",
+                          "type": "AMAZON.NUMBER",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1175660665862.102124555947"
+                          }
+                      },
+                      {
+                          "name": "pain",
+                          "type": "AMAZON.NUMBER",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1175660665862.198531737490"
+                          }
+                      },
+                      {
+                          "name": "distress",
+                          "type": "AMAZON.NUMBER",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1175660665862.961159834803"
+                          }
+                      }
+                  ]
+              },
+              {
+                  "name": "NameIntent",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "name",
+                          "type": "AMAZON.FirstName",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.848975393626.605365427180"
+                          }
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "ALWAYS"
+      },
+      "prompts": [
+          {
+              "id": "Elicit.Slot.1175660665862.1389197797871",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "On a scale of one to ten, how was your sleep yesterday?"
+                  }
               ]
-            },
-            {
-              "name": "personality",
-              "type": "personalityType",
-              "samples": [
-                "{I_Am} {article} {personality}",
-                "{personality}"
+          },
+          {
+              "id": "Elicit.Slot.1175660665862.102124555947",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "On a scale of one to ten, how fatigued are you today?"
+                  }
               ]
-            },
-            {
-              "name": "preferredSpecies",
-              "type": "preferredSpeciesType",
-              "samples": [
-                "{I_Like} {preferredSpecies}",
-                "{preferredSpecies}"
+          },
+          {
+              "id": "Elicit.Slot.1175660665862.198531737490",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "On a scale of one to ten, how is your pain today?"
+                  }
               ]
-            },
-            {
-              "name": "bloodTolerance",
-              "type": "bloodToleranceType",
-              "samples": [
-                "I would {bloodTolerance}",
-                "{bloodTolerance}"
+          },
+          {
+              "id": "Elicit.Slot.1175660665862.961159834803",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "On a scale of one to ten, how distressed are you today?"
+                  }
               ]
-            },
-            {
-              "name": "I_Like",
-              "type": "iSubjectType"
-            },
-            {
-              "name": "I_Want",
-              "type": "iSubjectType"
-            },
-            {
-              "name": "article",
-              "type": "articleType"
-            },
-            {
-              "name": "I_Am",
-              "type": "IAmType"
-            }
-          ],
-          "samples": [
-            "recommend a job",
-            "{I_Like} {preferredSpecies}",
-            "{I_Like} {bloodTolerance}",
-            "{I_Am} {article} {personality}",
-            "{I_Want} to be {salaryImportance}",
-            "to recommend a job",
-            "start my career"
-          ]
-        }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "name": {
-                "value": "a",
-                "synonyms": []
-              }
-            },
-            {
-              "name": {
-                "value": "an",
-                "synonyms": []
-              }
-            }
-          ],
-          "name": "articleType"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "low",
-                "synonyms": [
-                  "yuck",
-                  "no way",
-                  "gross",
-                  "I can't stand it",
-                  "can't stand it",
-                  "throw up when I see it",
-                  "scream"
-                ]
-              }
-            },
-            {
-              "name": {
-                "value": "high",
-                "synonyms": [
-                  "I like blood",
-                  "doesn't bother me",
-                  "blood is natural",
-                  "shrug"
-                ]
-              }
-            }
-          ],
-          "name": "bloodToleranceType"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "I am",
-                "synonyms": []
-              }
-            }
-          ],
-          "name": "IAmType"
-        },
-        {
-          "values": [
-            {
-              "id": "true",
-              "name": {
-                "value": "positive",
-                "synonyms": [
-                  "I want",
-                  "I prefer",
-                  "I really like",
-                  "I love",
-                  "I like"
-                ]
-              }
-            },
-            {
-              "id": "false",
-              "name": {
-                "value": "negative",
-                "synonyms": [
-                  "I don't want",
-                  "I really don't like",
-                  "I don't like",
-                  "I hate"
-                ]
-              }
-            }
-          ],
-          "name": "iSubjectType"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "extrovert",
-                "synonyms": [
-                  "social butterfly",
-                  "love to party"
-                ]
-              }
-            },
-            {
-              "name": {
-                "value": "introvert",
-                "synonyms": [
-                  "to be alone",
-                  "misunderstood"
-                ]
-              }
-            }
-          ],
-          "name": "personalityType"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "animals",
-                "synonyms": [
-                  "dogs",
-                  "cats",
-                  "birds",
-                  "turtles",
-                  "puppies",
-                  "kittens",
-                  "elephants"
-                ]
-              }
-            },
-            {
-              "name": {
-                "value": "people",
-                "synonyms": [
-                  "men",
-                  "women",
-                  "kids",
-                  "humans"
-                ]
-              }
-            }
-          ],
-          "name": "preferredSpeciesType"
-        },
-        {
-          "values": [
-            {
-              "name": {
-                "value": "unimportant",
-                "synonyms": [
-                  "money is evil",
-                  "money is not important",
-                  "not a sell out",
-                  "nope",
-                  "don't care about money"
-                ]
-              }
-            },
-            {
-              "name": {
-                "value": "somewhat",
-                "synonyms": [
-                  "just enough",
-                  "somewhat important",
-                  "not top priority",
-                  "support my family"
-                ]
-              }
-            },
-            {
-              "name": {
-                "value": "very",
-                "synonyms": [
-                  "high salary",
-                  "filthy rich",
-                  "billionaire",
-                  "important",
-                  "nothing more important"
-                ]
-              }
-            }
-          ],
-          "name": "salaryImportanceType"
-        }
+          },
+          {
+              "id": "Elicit.Slot.848975393626.605365427180",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "First, what is your name?"
+                  }
+              ]
+          }
       ]
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "RecommendationIntent",
-          "confirmationRequired": false,
-          "slots": [
-            {
-              "name": "salaryImportance",
-              "type": "salaryImportanceType",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-salaryImportance"
-              }
-            },
-            {
-              "name": "personality",
-              "type": "personalityType",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-personality"
-              }
-            },
-            {
-              "name": "preferredSpecies",
-              "type": "preferredSpeciesType",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-preferredSpecies"
-              }
-            },
-            {
-              "name": "bloodTolerance",
-              "type": "bloodToleranceType",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-bloodTolerance"
-              }
-            },
-            {
-              "name": "I_Like",
-              "type": "iSubjectType",
-              "elicitationRequired": false,
-              "confirmationRequired": false
-            },
-            {
-              "name": "I_Want",
-              "type": "iSubjectType",
-              "elicitationRequired": false,
-              "confirmationRequired": false
-            },
-            {
-              "name": "article",
-              "type": "articleType",
-              "elicitationRequired": false,
-              "confirmationRequired": false
-            },
-            {
-              "name": "I_Am",
-              "type": "IAmType",
-              "elicitationRequired": false,
-              "confirmationRequired": false
-            }
-          ]
-        }
-      ]
-    },
-    "prompts": [
-      {
-        "id": "Elicit.Intent-RecommendationIntent.IntentSlot-salaryImportance",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Which phrase best describes your thoughts about money, there's nothing more important, not top priority, or I don't care about money."
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Intent-RecommendationIntent.IntentSlot-personality",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Would you say that you are an introvert or an extrovert?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Intent-RecommendationIntent.IntentSlot-preferredSpecies",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "Between animals and people which do you prefer?"
-          }
-        ]
-      },
-      {
-        "id": "Elicit.Intent-RecommendationIntent.IntentSlot-bloodTolerance",
-        "variations": [
-          {
-            "type": "PlainText",
-            "value": "If you saw blood would you scream or shrug?"
-          }
-        ]
-      }
-    ]
   }
 }

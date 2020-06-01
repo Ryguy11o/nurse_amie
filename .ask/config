@@ -1,9 +1,33 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
+      "skill_id": "amzn1.ask.skill.9eb82f08-bd35-427c-b41e-ed754bb96abc",
       "was_cloned": false,
-      "merge": {}
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "176308114f5ab19f9b8dbed698060484"
+        },
+        "interactionModel": {
+          "en-US": {
+            "eTag": "a45bdbe8073a85d53760116280bae29c"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:213214244027:function:ask-custom-Nurse-Amie-Skill-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-Nurse-Amie-Skill-default",
+            "handler": "index.handler",
+            "revisionId": "52536d39-822d-47c8-91aa-fc4c2e4ea68a",
+            "runtime": "nodejs10.x"
+          }
+        ]
+      }
     }
   }
 }

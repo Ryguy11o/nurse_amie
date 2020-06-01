@@ -1,13 +1,17 @@
 {
-  "name": "DecisionTree",
+  "name": "nurseamie",
   "version": "2.0.0",
-  "description": "Alexa Decision Tree template",
+  "description": "Nurse Amie Skill",
   "main": "index.js",
+  "scripts": {
+    "RecommendationIntent": "lambda-local -l ./index.js -e ./Requests/RecommendationIntent.json -t 10",
+    "NameIntent": "lambda-local -l ./index.js -e ./Requests/NameIntent.json -t 10"
+  },
   "dependencies": {
     "ask-sdk-core": "^2.0.0",
+    "ask-sdk-dynamodb-persistence-adapter": "^2.8.0",
     "ask-sdk-model": "^1.0.0"
   },
   "devDependencies": {},
-  "author": "Amazon.com",
-  "license": "SEE LICENSE IN license.md"
+  "author": "Ryan ONeill"
 }
